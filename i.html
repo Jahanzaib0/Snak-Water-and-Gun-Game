@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Snake Water And Gun</h1>
+    </header>
+    <section id="main">
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Snake</h2>
+            <p>Good Luck! May be you Win... click on the image to check</p>
+          </div>
+          <div class="flip-box-back">
+            <img
+            src="/img/snake.png"
+            alt="Paris"
+            style="width: 300px; height: 200px"
+            class="i"
+            id="snake"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Water</h2>
+            <p>Good Luck! May be you Win...click on the image to check</p>
+          </div>
+          <div class="flip-box-back">
+            <img
+            src="/img/drop-of-water-578897__480.jpg"
+            alt="Water"
+            style="width: 300px; height: 200px"
+            class="i"
+            id="water"
+          />
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h2>Gun</h2>
+            <p>Good Luck! May be you Win...
+                click on the image to check
+            </p>
+          </div>
+          <div class="flip-box-back">
+            <img
+            src="/img/gun.jpeg"
+            alt="Paris"
+            style="width: 300px; height: 200px"
+            class="i"
+            id="gun"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gameInfo">
+        <button id="myBtn">click to know Game Info</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Game Rules</h3>
+                <p>Snake vs. Water: Snake drinks the water hence wins. <br>
+                    Water vs. Gun: The gun will drown in water, hence a point for water. <br>
+                    Gun vs. Snake: Gun will kill the snake and win.</p>
+                    <p>You play with computer on the other side card select by computer</p>
+              </div>
+        </div>
+        <div id="hide">
+           <h3 id="inner"></h3>
+        </div>
+    </section>
+  </body>
+  <script src="index.js"></script>
+</html>
